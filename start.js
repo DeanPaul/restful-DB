@@ -11,7 +11,7 @@ app.get('/', (request, response) => response.send('Hello World'));
 app.use('/api', router);
 
 router.get('/', (request, response) => {
-  response.json({message: 'Hello, welcome to my server'});
+    response.json({message: 'Hello, welcome to my server'});
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
