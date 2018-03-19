@@ -1,0 +1,19 @@
+{
+  "name": "restful",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node debug index.js",
+    "startDB":"node start.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.16.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2"
+  }
+}
