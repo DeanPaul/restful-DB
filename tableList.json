@@ -1,9 +1,1 @@
-[
-  {
-    "name": "sys",
-    "columns": [
-      "col1",
-      "col2"
-    ]
-  }
-]
+[{"name":"sys","columns":["col1","col2"]},{"columns":["c1","c2"],"name":"table1"},{"columns":["c1","c2","c3"],"name":"table1"},{"columns":["sddad"],"name":"table2"}]

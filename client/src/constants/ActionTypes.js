@@ -14,6 +14,10 @@ const ActionTypes = keyMirror({
     RECEIVE_TODO_LIST: null,
     FAILURE_TODO_LIST: null,
 
+    CLOSE_MODAL_CREATE_TABLE: null,
+    OPEN_MODAL_CREATE_TABLE: null,
+    SELECT_TABLE: null,
+    SAVE_TABLE: null,
 });
 
 export default ActionTypes;

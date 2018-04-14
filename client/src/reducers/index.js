@@ -1,11 +1,11 @@
 import {combineReducers} from 'redux';
-import MessageBoard from './MessageBoard';
-import Todo from './Todo';
+import Tables from './Tables';
+import Data from './Data';
 import {routerReducer} from 'react-router-redux';
 
 const rootReducer = combineReducers({
-    MessageBoard,
-    Todo,
+    Tables,
+    Data,
     routing: routerReducer
 });
 

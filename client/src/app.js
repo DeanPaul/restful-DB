@@ -6,7 +6,7 @@ import {Router, Route, IndexRoute, browserHistory} from "react-router";
 import {syncHistoryWithStore} from 'react-router-redux';
 import {App, Home} from './components'
 //import { createBrowserHistory } from 'history';//fix react-router 4.x issue
-import {Todo, MessageBoard} from './containers'
+import {Data, Tables} from './containers'
 const store = configureStore({});
 const history = syncHistoryWithStore(browserHistory, store);
 //const history = syncHistoryWithStore(createBrowserHistory(), store); //fix react-router 4.x issue
@@ -15,8 +15,8 @@ ReactDOM.render(
         <Router history={history}>
             <Route path="/" component={App}>
                 <IndexRoute component={Home}/>
-                <Route path="todo" component={Todo}/>
-                <Route path="message" component={MessageBoard}/>
+                <Route path="data/:name" component={Data}/>
+                <Route path="tables" component={Tables}/>
             </Route>
         </Router>
     </Provider>,

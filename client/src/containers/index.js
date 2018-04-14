@@ -1,8 +1,7 @@
-import MessageBoard from './message/MessageBoard';
-import Todo from './todo/Todo';
-
+import Tables from './tables/Tables';
+import Data from './data/Data';
 
 export {
-    MessageBoard,
-    Todo
+    Tables,
+    Data,
 }

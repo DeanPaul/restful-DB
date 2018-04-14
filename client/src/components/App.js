@@ -14,10 +14,7 @@ export default function App({children}) {
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <Link to="/message" className="nav-link">MessageBoard</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/todo" className="nav-link disabled">Todo</Link>
+                            <Link to="/tables" className="nav-link">Tables</Link>
                         </li>
                     </ul>
                     <form className="form-inline my-2 my-md-0" style={{display: 'none'}}>
