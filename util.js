@@ -1,13 +1,19 @@
 const fs = require('fs');
+const ENCODING = "utf8";
 
-exports.readFile = (fileName, encoding) =>
-    new Promise((resolve, reject) => fs.readFile(fileName, encoding, (err, data) => err ? reject(err) : resolve(data)))
+exports.readFile = (fileName) =>
+    new Promise((resolve, reject) => fs.readFile(fileName, ENCODING, (err, data) => err ? reject(err) : resolve(data)));
 
-exports.saveFile = (fileName, content, encoding) =>
-    new Promise((resolve, reject) => fs.writeFile(fileName, content, encoding, (err) => err ? reject(err) : resolve()))
+exports.saveFile = (fileName, content) =>
+    new Promise((resolve, reject) => fs.writeFile(fileName, content, ENCODING, (err) => err ? reject(err) : resolve()));
 
-exports.getEncoding = () => "utf8";
+exports.removeFile = (fileName) =>
+    new Promise((resolve, reject) => fs.unlink(fileName, (err) => err ? reject(err) : resolve()));
 
-exports.getTableList = () => "tableList.json";
 
+exports.tableList = "tableList.json";
 
+exports.dbHome = "db/";
+
+exports.tableAPIName = "/table";
+exports.dataAPIName = "/data";
